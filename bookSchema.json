@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": ["book"],
+  "properties": {
+    "book": {
+      "type": "object",
+      "default": {},
+      "title": "The book Schema",
+      "required": [
+        "isbn",
+        "amazon_url",
+        "author",
+        "language",
+        "pages",
+        "publisher",
+        "title",
+        "year"
+      ],
+      "properties": {
+        "isbn": {
+          "type": "string",
+          "default": "",
+          "title": "The isbn Schema",
+          "examples": ["978-3-16-148410-0"]
+        },
+        "amazon_url": {
+          "type": "string",
+          "default": "",
+          "title": "The amazon-url Schema",
+          "examples": [
+            "https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=rtpb_sccl_2/132-7633533-4591362?pd_rd_w=Mungo\u0026content-id=amzn1.sym.ab907333-063a-4de1-b403-0a312c047f32\u0026pf_rd_p=ab907333-063a-4de1-b403-0a312c047f32\u0026pf_rd_r=YBV46W68J1101552EF3B\u0026pd_rd_wg=J7i4l\u0026pd_rd_r=87b854b9-d515-4fa8-b2a6-d3548403cfb0\u0026pd_rd_i=1455586692\u0026psc=1"
+          ]
+        },
+        "author": {
+          "type": "string",
+          "default": "",
+          "title": "The author Schema",
+          "examples": ["Scott Harrington"]
+        },
+        "language": {
+          "type": "string",
+          "default": "",
+          "title": "The language Schema",
+          "examples": ["English"]
+        },
+        "pages": {
+          "type": "integer",
+          "default": 0,
+          "title": "The pages Schema",
+          "examples": [1000]
+        },
+        "publisher": {
+          "type": "string",
+          "default": "",
+          "title": "The publisher Schema",
+          "examples": ["Scotts Clearing House"]
+        },
+        "title": {
+          "type": "string",
+          "default": "",
+          "title": "The title Schema",
+          "examples": ["My Favorite Cat"]
+        },
+        "year": {
+          "type": "integer",
+          "default": 0,
+          "title": "The year Schema",
+          "examples": [2023]
+        }
+      },
+      "examples": [
+        {
+          "isbn": "978-3-16-148410-0",
+          "amazon-url": "https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=rtpb_sccl_2/132-7633533-4591362?pd_rd_w=Mungo\u0026content-id=amzn1.sym.ab907333-063a-4de1-b403-0a312c047f32\u0026pf_rd_p=ab907333-063a-4de1-b403-0a312c047f32\u0026pf_rd_r=YBV46W68J1101552EF3B\u0026pd_rd_wg=J7i4l\u0026pd_rd_r=87b854b9-d515-4fa8-b2a6-d3548403cfb0\u0026pd_rd_i=1455586692\u0026psc=1",
+          "author": "Scott Harrington",
+          "language": "English",
+          "pages": 1000,
+          "publisher": "Scotts Clearing House",
+          "title": "My Favorite Cat",
+          "year": 2023
+        }
+      ]
+    }
+  },
+  "examples": [
+    {
+      "book": {
+        "isbn": "978-3-16-148410-0",
+        "amazon-url": "https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692/ref=rtpb_sccl_2/132-7633533-4591362?pd_rd_w=Mungo\u0026content-id=amzn1.sym.ab907333-063a-4de1-b403-0a312c047f32\u0026pf_rd_p=ab907333-063a-4de1-b403-0a312c047f32\u0026pf_rd_r=YBV46W68J1101552EF3B\u0026pd_rd_wg=J7i4l\u0026pd_rd_r=87b854b9-d515-4fa8-b2a6-d3548403cfb0\u0026pd_rd_i=1455586692\u0026psc=1",
+        "author": "Scott Harrington",
+        "language": "English",
+        "pages": 1000,
+        "publisher": "Scotts Clearing House",
+        "title": "My Favorite Cat",
+        "year": 2023
+      }
+    }
+  ]
+}
